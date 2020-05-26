@@ -12,7 +12,7 @@
               },
               "created": "2019-09-19T10:00:00.000Z",
               "icon": "string",
-              "id": "string",
+              "id": "",
               "is_favorite": false,
               "is_read_only": false,
               "is_shared": false,
@@ -55,7 +55,7 @@
       "json_curl": {
         "dashboards": [
           {
-            "id": null,
+            "id": "",
             "type": null
           }
         ]
@@ -68,7 +68,7 @@
               "handle": "string",
               "name": "string"
             },
-            "id": "string",
+            "id": "",
             "type": "string"
           }
         ]
@@ -89,7 +89,7 @@
               },
               "created": "2019-09-19T10:00:00.000Z",
               "icon": "string",
-              "id": "string",
+              "id": "",
               "is_favorite": false,
               "is_read_only": false,
               "is_shared": false,
@@ -140,7 +140,7 @@
               },
               "created": "2019-09-19T10:00:00.000Z",
               "icon": "string",
-              "id": "string",
+              "id": "",
               "is_favorite": false,
               "is_read_only": false,
               "is_shared": false,
@@ -183,7 +183,7 @@
       "json_curl": {
         "dashboards": [
           {
-            "id": null,
+            "id": "",
             "type": null
           }
         ]
@@ -196,7 +196,7 @@
               "handle": "string",
               "name": "string"
             },
-            "id": "string",
+            "id": "",
             "type": "string"
           }
         ]
@@ -217,7 +217,7 @@
               },
               "created": "2019-09-19T10:00:00.000Z",
               "icon": "string",
-              "id": "string",
+              "id": "",
               "is_favorite": false,
               "is_read_only": false,
               "is_shared": false,
@@ -261,7 +261,7 @@
       "json_curl": {
         "dashboards": [
           {
-            "id": null,
+            "id": "",
             "type": null
           }
         ]
@@ -274,7 +274,7 @@
               "handle": "string",
               "name": "string"
             },
-            "id": "string",
+            "id": "",
             "type": "string"
           }
         ]
