@@ -700,14 +700,6 @@
                 "properties": {
                   "destination": {
                     "description": "An archive's destination.",
-                    "discriminator": {
-                      "mapping": {
-                        "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                        "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                        "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                      },
-                      "propertyName": "type"
-                    },
                     "nullable": true,
                     "oneOf": [
                       {
@@ -753,10 +745,15 @@
                           },
                           "type": {
                             "default": "azure",
-                            "description": "The type of destination.",
+                            "description": "Type of the Azure archive destination.",
+                            "enum": [
+                              "azure"
+                            ],
                             "example": "azure",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "AZURE"
+                            ]
                           }
                         },
                         "required": [
@@ -801,10 +798,15 @@
                           },
                           "type": {
                             "default": "gcs",
-                            "description": "The type of destination.",
+                            "description": "Type of the GCS archive destination.",
+                            "enum": [
+                              "gcs"
+                            ],
                             "example": "gcs",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "GCS"
+                            ]
                           }
                         },
                         "required": [
@@ -848,10 +850,15 @@
                           },
                           "type": {
                             "default": "s3",
-                            "description": "The type of destination.",
+                            "description": "Type of the S3 archive destination.",
+                            "enum": [
+                              "s3"
+                            ],
                             "example": "s3",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "S3"
+                            ]
                           }
                         },
                         "required": [
@@ -930,14 +937,6 @@
         "properties": {
           "destination": {
             "description": "An archive's destination.",
-            "discriminator": {
-              "mapping": {
-                "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                "s3": "#/components/schemas/LogsArchiveDestinationS3"
-              },
-              "propertyName": "type"
-            },
             "nullable": true,
             "oneOf": [
               {
@@ -983,10 +982,15 @@
                   },
                   "type": {
                     "default": "azure",
-                    "description": "The type of destination.",
+                    "description": "Type of the Azure archive destination.",
+                    "enum": [
+                      "azure"
+                    ],
                     "example": "azure",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "AZURE"
+                    ]
                   }
                 },
                 "required": [
@@ -1031,10 +1035,15 @@
                   },
                   "type": {
                     "default": "gcs",
-                    "description": "The type of destination.",
+                    "description": "Type of the GCS archive destination.",
+                    "enum": [
+                      "gcs"
+                    ],
                     "example": "gcs",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "GCS"
+                    ]
                   }
                 },
                 "required": [
@@ -1078,10 +1087,15 @@
                   },
                   "type": {
                     "default": "s3",
-                    "description": "The type of destination.",
+                    "description": "Type of the S3 archive destination.",
+                    "enum": [
+                      "s3"
+                    ],
                     "example": "s3",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "S3"
+                    ]
                   }
                 },
                 "required": [
@@ -1144,14 +1158,6 @@
                 "properties": {
                   "destination": {
                     "description": "An archive's destination.",
-                    "discriminator": {
-                      "mapping": {
-                        "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                        "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                        "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                      },
-                      "propertyName": "type"
-                    },
                     "oneOf": [
                       {
                         "description": "The Azure archive destination.",
@@ -1196,10 +1202,15 @@
                           },
                           "type": {
                             "default": "azure",
-                            "description": "The type of destination.",
+                            "description": "Type of the Azure archive destination.",
+                            "enum": [
+                              "azure"
+                            ],
                             "example": "azure",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "AZURE"
+                            ]
                           }
                         },
                         "required": [
@@ -1244,10 +1255,15 @@
                           },
                           "type": {
                             "default": "gcs",
-                            "description": "The type of destination.",
+                            "description": "Type of the GCS archive destination.",
+                            "enum": [
+                              "gcs"
+                            ],
                             "example": "gcs",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "GCS"
+                            ]
                           }
                         },
                         "required": [
@@ -1291,10 +1307,15 @@
                           },
                           "type": {
                             "default": "s3",
-                            "description": "The type of destination.",
+                            "description": "Type of the S3 archive destination.",
+                            "enum": [
+                              "s3"
+                            ],
                             "example": "s3",
-                            "readOnly": true,
-                            "type": "string"
+                            "type": "string",
+                            "x-enum-varnames": [
+                              "S3"
+                            ]
                           }
                         },
                         "required": [
@@ -1349,14 +1370,6 @@
         "properties": {
           "destination": {
             "description": "An archive's destination.",
-            "discriminator": {
-              "mapping": {
-                "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                "s3": "#/components/schemas/LogsArchiveDestinationS3"
-              },
-              "propertyName": "type"
-            },
             "oneOf": [
               {
                 "description": "The Azure archive destination.",
@@ -1401,10 +1414,15 @@
                   },
                   "type": {
                     "default": "azure",
-                    "description": "The type of destination.",
+                    "description": "Type of the Azure archive destination.",
+                    "enum": [
+                      "azure"
+                    ],
                     "example": "azure",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "AZURE"
+                    ]
                   }
                 },
                 "required": [
@@ -1449,10 +1467,15 @@
                   },
                   "type": {
                     "default": "gcs",
-                    "description": "The type of destination.",
+                    "description": "Type of the GCS archive destination.",
+                    "enum": [
+                      "gcs"
+                    ],
                     "example": "gcs",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "GCS"
+                    ]
                   }
                 },
                 "required": [
@@ -1496,10 +1519,15 @@
                   },
                   "type": {
                     "default": "s3",
-                    "description": "The type of destination.",
+                    "description": "Type of the S3 archive destination.",
+                    "enum": [
+                      "s3"
+                    ],
                     "example": "s3",
-                    "readOnly": true,
-                    "type": "string"
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "S3"
+                    ]
                   }
                 },
                 "required": [
@@ -1542,14 +1570,6 @@
             "properties": {
               "destination": {
                 "description": "An archive's destination.",
-                "discriminator": {
-                  "mapping": {
-                    "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                    "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                    "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                  },
-                  "propertyName": "type"
-                },
                 "oneOf": [
                   {
                     "description": "The Azure archive destination.",
@@ -1594,10 +1614,15 @@
                       },
                       "type": {
                         "default": "azure",
-                        "description": "The type of destination.",
+                        "description": "Type of the Azure archive destination.",
+                        "enum": [
+                          "azure"
+                        ],
                         "example": "azure",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "AZURE"
+                        ]
                       }
                     },
                     "required": [
@@ -1642,10 +1667,15 @@
                       },
                       "type": {
                         "default": "gcs",
-                        "description": "The type of destination.",
+                        "description": "Type of the GCS archive destination.",
+                        "enum": [
+                          "gcs"
+                        ],
                         "example": "gcs",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "GCS"
+                        ]
                       }
                     },
                     "required": [
@@ -1689,10 +1719,15 @@
                       },
                       "type": {
                         "default": "s3",
-                        "description": "The type of destination.",
+                        "description": "Type of the S3 archive destination.",
+                        "enum": [
+                          "s3"
+                        ],
                         "example": "s3",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "S3"
+                        ]
                       }
                     },
                     "required": [
@@ -1741,14 +1776,6 @@
       },
       "LogsArchiveCreateRequestDestination": {
         "description": "An archive's destination.",
-        "discriminator": {
-          "mapping": {
-            "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-            "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-            "s3": "#/components/schemas/LogsArchiveDestinationS3"
-          },
-          "propertyName": "type"
-        },
         "oneOf": [
           {
             "description": "The Azure archive destination.",
@@ -1793,10 +1820,15 @@
               },
               "type": {
                 "default": "azure",
-                "description": "The type of destination.",
+                "description": "Type of the Azure archive destination.",
+                "enum": [
+                  "azure"
+                ],
                 "example": "azure",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "AZURE"
+                ]
               }
             },
             "required": [
@@ -1841,10 +1873,15 @@
               },
               "type": {
                 "default": "gcs",
-                "description": "The type of destination.",
+                "description": "Type of the GCS archive destination.",
+                "enum": [
+                  "gcs"
+                ],
                 "example": "gcs",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "GCS"
+                ]
               }
             },
             "required": [
@@ -1888,10 +1925,15 @@
               },
               "type": {
                 "default": "s3",
-                "description": "The type of destination.",
+                "description": "Type of the S3 archive destination.",
+                "enum": [
+                  "s3"
+                ],
                 "example": "s3",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "S3"
+                ]
               }
             },
             "required": [
@@ -1916,14 +1958,6 @@
             "properties": {
               "destination": {
                 "description": "An archive's destination.",
-                "discriminator": {
-                  "mapping": {
-                    "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                    "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                    "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                  },
-                  "propertyName": "type"
-                },
                 "nullable": true,
                 "oneOf": [
                   {
@@ -1969,10 +2003,15 @@
                       },
                       "type": {
                         "default": "azure",
-                        "description": "The type of destination.",
+                        "description": "Type of the Azure archive destination.",
+                        "enum": [
+                          "azure"
+                        ],
                         "example": "azure",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "AZURE"
+                        ]
                       }
                     },
                     "required": [
@@ -2017,10 +2056,15 @@
                       },
                       "type": {
                         "default": "gcs",
-                        "description": "The type of destination.",
+                        "description": "Type of the GCS archive destination.",
+                        "enum": [
+                          "gcs"
+                        ],
                         "example": "gcs",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "GCS"
+                        ]
                       }
                     },
                     "required": [
@@ -2064,10 +2108,15 @@
                       },
                       "type": {
                         "default": "s3",
-                        "description": "The type of destination.",
+                        "description": "Type of the S3 archive destination.",
+                        "enum": [
+                          "s3"
+                        ],
                         "example": "s3",
-                        "readOnly": true,
-                        "type": "string"
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "S3"
+                        ]
                       }
                     },
                     "required": [
@@ -2140,14 +2189,6 @@
       },
       "LogsArchiveDestination": {
         "description": "An archive's destination.",
-        "discriminator": {
-          "mapping": {
-            "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-            "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-            "s3": "#/components/schemas/LogsArchiveDestinationS3"
-          },
-          "propertyName": "type"
-        },
         "nullable": true,
         "oneOf": [
           {
@@ -2193,10 +2234,15 @@
               },
               "type": {
                 "default": "azure",
-                "description": "The type of destination.",
+                "description": "Type of the Azure archive destination.",
+                "enum": [
+                  "azure"
+                ],
                 "example": "azure",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "AZURE"
+                ]
               }
             },
             "required": [
@@ -2241,10 +2287,15 @@
               },
               "type": {
                 "default": "gcs",
-                "description": "The type of destination.",
+                "description": "Type of the GCS archive destination.",
+                "enum": [
+                  "gcs"
+                ],
                 "example": "gcs",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "GCS"
+                ]
               }
             },
             "required": [
@@ -2288,10 +2339,15 @@
               },
               "type": {
                 "default": "s3",
-                "description": "The type of destination.",
+                "description": "Type of the S3 archive destination.",
+                "enum": [
+                  "s3"
+                ],
                 "example": "s3",
-                "readOnly": true,
-                "type": "string"
+                "type": "string",
+                "x-enum-varnames": [
+                  "S3"
+                ]
               }
             },
             "required": [
@@ -2351,10 +2407,15 @@
           },
           "type": {
             "default": "azure",
-            "description": "The type of destination.",
+            "description": "Type of the Azure archive destination.",
+            "enum": [
+              "azure"
+            ],
             "example": "azure",
-            "readOnly": true,
-            "type": "string"
+            "type": "string",
+            "x-enum-varnames": [
+              "AZURE"
+            ]
           }
         },
         "required": [
@@ -2364,6 +2425,18 @@
           "type"
         ],
         "type": "object"
+      },
+      "LogsArchiveDestinationAzureType": {
+        "default": "azure",
+        "description": "Type of the Azure archive destination.",
+        "enum": [
+          "azure"
+        ],
+        "example": "azure",
+        "type": "string",
+        "x-enum-varnames": [
+          "AZURE"
+        ]
       },
       "LogsArchiveDestinationGCS": {
         "description": "The GCS archive destination.",
@@ -2399,10 +2472,15 @@
           },
           "type": {
             "default": "gcs",
-            "description": "The type of destination.",
+            "description": "Type of the GCS archive destination.",
+            "enum": [
+              "gcs"
+            ],
             "example": "gcs",
-            "readOnly": true,
-            "type": "string"
+            "type": "string",
+            "x-enum-varnames": [
+              "GCS"
+            ]
           }
         },
         "required": [
@@ -2411,6 +2489,18 @@
           "type"
         ],
         "type": "object"
+      },
+      "LogsArchiveDestinationGCSType": {
+        "default": "gcs",
+        "description": "Type of the GCS archive destination.",
+        "enum": [
+          "gcs"
+        ],
+        "example": "gcs",
+        "type": "string",
+        "x-enum-varnames": [
+          "GCS"
+        ]
       },
       "LogsArchiveDestinationS3": {
         "description": "The S3 archive destination.",
@@ -2446,10 +2536,15 @@
           },
           "type": {
             "default": "s3",
-            "description": "The type of destination.",
+            "description": "Type of the S3 archive destination.",
+            "enum": [
+              "s3"
+            ],
             "example": "s3",
-            "readOnly": true,
-            "type": "string"
+            "type": "string",
+            "x-enum-varnames": [
+              "S3"
+            ]
           }
         },
         "required": [
@@ -2458,6 +2553,18 @@
           "type"
         ],
         "type": "object"
+      },
+      "LogsArchiveDestinationS3Type": {
+        "default": "s3",
+        "description": "Type of the S3 archive destination.",
+        "enum": [
+          "s3"
+        ],
+        "example": "s3",
+        "type": "string",
+        "x-enum-varnames": [
+          "S3"
+        ]
       },
       "LogsArchiveIntegrationAzure": {
         "description": "The Azure archive's integration destination.",
@@ -2549,14 +2656,6 @@
                   "properties": {
                     "destination": {
                       "description": "An archive's destination.",
-                      "discriminator": {
-                        "mapping": {
-                          "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                          "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                          "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                        },
-                        "propertyName": "type"
-                      },
                       "nullable": true,
                       "oneOf": [
                         {
@@ -2602,10 +2701,15 @@
                             },
                             "type": {
                               "default": "azure",
-                              "description": "The type of destination.",
+                              "description": "Type of the Azure archive destination.",
+                              "enum": [
+                                "azure"
+                              ],
                               "example": "azure",
-                              "readOnly": true,
-                              "type": "string"
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "AZURE"
+                              ]
                             }
                           },
                           "required": [
@@ -2650,10 +2754,15 @@
                             },
                             "type": {
                               "default": "gcs",
-                              "description": "The type of destination.",
+                              "description": "Type of the GCS archive destination.",
+                              "enum": [
+                                "gcs"
+                              ],
                               "example": "gcs",
-                              "readOnly": true,
-                              "type": "string"
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "GCS"
+                              ]
                             }
                           },
                           "required": [
@@ -2697,10 +2806,15 @@
                             },
                             "type": {
                               "default": "s3",
-                              "description": "The type of destination.",
+                              "description": "Type of the S3 archive destination.",
+                              "enum": [
+                                "s3"
+                              ],
                               "example": "s3",
-                              "readOnly": true,
-                              "type": "string"
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "S3"
+                              ]
                             }
                           },
                           "required": [
@@ -9940,14 +10054,6 @@
                             "properties": {
                               "destination": {
                                 "description": "An archive's destination.",
-                                "discriminator": {
-                                  "mapping": {
-                                    "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                    "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                    "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                                  },
-                                  "propertyName": "type"
-                                },
                                 "nullable": true,
                                 "oneOf": [
                                   {
@@ -9993,10 +10099,15 @@
                                       },
                                       "type": {
                                         "default": "azure",
-                                        "description": "The type of destination.",
+                                        "description": "Type of the Azure archive destination.",
+                                        "enum": [
+                                          "azure"
+                                        ],
                                         "example": "azure",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "AZURE"
+                                        ]
                                       }
                                     },
                                     "required": [
@@ -10041,10 +10152,15 @@
                                       },
                                       "type": {
                                         "default": "gcs",
-                                        "description": "The type of destination.",
+                                        "description": "Type of the GCS archive destination.",
+                                        "enum": [
+                                          "gcs"
+                                        ],
                                         "example": "gcs",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "GCS"
+                                        ]
                                       }
                                     },
                                     "required": [
@@ -10088,10 +10204,15 @@
                                       },
                                       "type": {
                                         "default": "s3",
-                                        "description": "The type of destination.",
+                                        "description": "Type of the S3 archive destination.",
+                                        "enum": [
+                                          "s3"
+                                        ],
                                         "example": "s3",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "S3"
+                                        ]
                                       }
                                     },
                                     "required": [
@@ -10200,8 +10321,7 @@
         "summary": "Get all archives",
         "tags": [
           "Logs Archives"
-        ],
-        "x-unstable": "**Note**: This endpoint is in public beta.\nIf you have any feedback, contact [Datadog support](https://docs.datadoghq.com/help/)."
+        ]
       },
       "post": {
         "description": "Create an archive in your organization.",
@@ -10220,14 +10340,6 @@
                         "properties": {
                           "destination": {
                             "description": "An archive's destination.",
-                            "discriminator": {
-                              "mapping": {
-                                "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                              },
-                              "propertyName": "type"
-                            },
                             "oneOf": [
                               {
                                 "description": "The Azure archive destination.",
@@ -10272,10 +10384,15 @@
                                   },
                                   "type": {
                                     "default": "azure",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the Azure archive destination.",
+                                    "enum": [
+                                      "azure"
+                                    ],
                                     "example": "azure",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "AZURE"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -10320,10 +10437,15 @@
                                   },
                                   "type": {
                                     "default": "gcs",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the GCS archive destination.",
+                                    "enum": [
+                                      "gcs"
+                                    ],
                                     "example": "gcs",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "GCS"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -10367,10 +10489,15 @@
                                   },
                                   "type": {
                                     "default": "s3",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the S3 archive destination.",
+                                    "enum": [
+                                      "s3"
+                                    ],
                                     "example": "s3",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "S3"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -10440,14 +10567,6 @@
                           "properties": {
                             "destination": {
                               "description": "An archive's destination.",
-                              "discriminator": {
-                                "mapping": {
-                                  "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                  "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                  "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                                },
-                                "propertyName": "type"
-                              },
                               "nullable": true,
                               "oneOf": [
                                 {
@@ -10493,10 +10612,15 @@
                                     },
                                     "type": {
                                       "default": "azure",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the Azure archive destination.",
+                                      "enum": [
+                                        "azure"
+                                      ],
                                       "example": "azure",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "AZURE"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -10541,10 +10665,15 @@
                                     },
                                     "type": {
                                       "default": "gcs",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the GCS archive destination.",
+                                      "enum": [
+                                        "gcs"
+                                      ],
                                       "example": "gcs",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "GCS"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -10588,10 +10717,15 @@
                                     },
                                     "type": {
                                       "default": "s3",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the S3 archive destination.",
+                                      "enum": [
+                                        "s3"
+                                      ],
                                       "example": "s3",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "S3"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -10724,8 +10858,7 @@
         "tags": [
           "Logs Archives"
         ],
-        "x-codegen-request-body-name": "body",
-        "x-unstable": "**Note**: This endpoint is in public beta.\nIf you have any feedback, contact [Datadog support](https://docs.datadoghq.com/help/)."
+        "x-codegen-request-body-name": "body"
       }
     },
     "/api/v2/logs/config/archives/{archive_id}": {
@@ -10826,8 +10959,7 @@
         "summary": "Delete an archive",
         "tags": [
           "Logs Archives"
-        ],
-        "x-unstable": "**Note**: This endpoint is in public beta.\nIf you have any feedback, contact [Datadog support](https://docs.datadoghq.com/help/)."
+        ]
       },
       "get": {
         "description": "Get a specific archive from your organization.",
@@ -10858,14 +10990,6 @@
                           "properties": {
                             "destination": {
                               "description": "An archive's destination.",
-                              "discriminator": {
-                                "mapping": {
-                                  "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                  "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                  "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                                },
-                                "propertyName": "type"
-                              },
                               "nullable": true,
                               "oneOf": [
                                 {
@@ -10911,10 +11035,15 @@
                                     },
                                     "type": {
                                       "default": "azure",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the Azure archive destination.",
+                                      "enum": [
+                                        "azure"
+                                      ],
                                       "example": "azure",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "AZURE"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -10959,10 +11088,15 @@
                                     },
                                     "type": {
                                       "default": "gcs",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the GCS archive destination.",
+                                      "enum": [
+                                        "gcs"
+                                      ],
                                       "example": "gcs",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "GCS"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -11006,10 +11140,15 @@
                                     },
                                     "type": {
                                       "default": "s3",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the S3 archive destination.",
+                                      "enum": [
+                                        "s3"
+                                      ],
                                       "example": "s3",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "S3"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -11166,8 +11305,7 @@
         "summary": "Get an archive",
         "tags": [
           "Logs Archives"
-        ],
-        "x-unstable": "**Note**: This endpoint is in public beta.\nIf you have any feedback, contact [Datadog support](https://docs.datadoghq.com/help/)."
+        ]
       },
       "put": {
         "description": "Update a given archive configuration.\n\n**Note**: Using this method updates your archive configuration by **replacing**\nyour current configuration with the new one sent to your Datadog organization.",
@@ -11197,14 +11335,6 @@
                         "properties": {
                           "destination": {
                             "description": "An archive's destination.",
-                            "discriminator": {
-                              "mapping": {
-                                "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                              },
-                              "propertyName": "type"
-                            },
                             "oneOf": [
                               {
                                 "description": "The Azure archive destination.",
@@ -11249,10 +11379,15 @@
                                   },
                                   "type": {
                                     "default": "azure",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the Azure archive destination.",
+                                    "enum": [
+                                      "azure"
+                                    ],
                                     "example": "azure",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "AZURE"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -11297,10 +11432,15 @@
                                   },
                                   "type": {
                                     "default": "gcs",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the GCS archive destination.",
+                                    "enum": [
+                                      "gcs"
+                                    ],
                                     "example": "gcs",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "GCS"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -11344,10 +11484,15 @@
                                   },
                                   "type": {
                                     "default": "s3",
-                                    "description": "The type of destination.",
+                                    "description": "Type of the S3 archive destination.",
+                                    "enum": [
+                                      "s3"
+                                    ],
                                     "example": "s3",
-                                    "readOnly": true,
-                                    "type": "string"
+                                    "type": "string",
+                                    "x-enum-varnames": [
+                                      "S3"
+                                    ]
                                   }
                                 },
                                 "required": [
@@ -11417,14 +11562,6 @@
                           "properties": {
                             "destination": {
                               "description": "An archive's destination.",
-                              "discriminator": {
-                                "mapping": {
-                                  "azure": "#/components/schemas/LogsArchiveDestinationAzure",
-                                  "gcs": "#/components/schemas/LogsArchiveDestinationGCS",
-                                  "s3": "#/components/schemas/LogsArchiveDestinationS3"
-                                },
-                                "propertyName": "type"
-                              },
                               "nullable": true,
                               "oneOf": [
                                 {
@@ -11470,10 +11607,15 @@
                                     },
                                     "type": {
                                       "default": "azure",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the Azure archive destination.",
+                                      "enum": [
+                                        "azure"
+                                      ],
                                       "example": "azure",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "AZURE"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -11518,10 +11660,15 @@
                                     },
                                     "type": {
                                       "default": "gcs",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the GCS archive destination.",
+                                      "enum": [
+                                        "gcs"
+                                      ],
                                       "example": "gcs",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "GCS"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -11565,10 +11712,15 @@
                                     },
                                     "type": {
                                       "default": "s3",
-                                      "description": "The type of destination.",
+                                      "description": "Type of the S3 archive destination.",
+                                      "enum": [
+                                        "s3"
+                                      ],
                                       "example": "s3",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "S3"
+                                      ]
                                     }
                                   },
                                   "required": [
@@ -11726,8 +11878,7 @@
         "tags": [
           "Logs Archives"
         ],
-        "x-codegen-request-body-name": "body",
-        "x-unstable": "**Note**: This endpoint is in public beta.\nIf you have any feedback, contact [Datadog support](https://docs.datadoghq.com/help/)."
+        "x-codegen-request-body-name": "body"
       }
     },
     "/api/v2/logs/config/archives/{archive_id}/readers": {
